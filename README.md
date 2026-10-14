@@ -37,6 +37,48 @@
  **1) Spit the name:**
    - Select column ➡️ transform ➡️By delimiter ➡️Comma ➡️ Each occurrence of the delimiter 
    - Select column ➡️ transform ➡️By delimiter ➡️Comma ➡️ Each occurrence of the delimiter
-   -  Column name :Title, Fist name ,and Last name
-   **2)Convert the column
-   - select column ➡️ Home ➡️Replace values ➡️ Value to find = No major surgery,Replace with = 0               
+   -  Column name :Title, Fist name ,and Last name  
+   **2)Convert the column**
+      
+   - select column ➡️ Home ➡️Replace values ➡️ Value to find = No major surgery,Replace with = 0
+**3)Check for inconsistencies in the "Heat Issues" and "Smoker" :**
+ - Select column "Heart issues" ➡️ Transform ➡️ Format ➡️ Capitalalize Each Word
+ -  Select column "Smoker" ➡️ Transform ➡️ Format ➡️ Capitalalize Each Word
+**4)Categorizes BMI into different categories:**
+ - Select column ➡️ Add column ➡️Conditional column ➡️ New column name :"Wight Status"
+ - If column name : BIM , Operator: > ,value: 18.5 ,than out put :Under weight ➡️Add clause
+ - Else if column name : BIM , Operator: >= ,value: 24.9,than out put : Normal wighht ➡️Add clause
+ - Else if     column name : BIM , Operator: >= ,value: 29.9 ,than out put :Over weight ➡️Add clause
+ -Else if         column name : BIM , Operator: =< ,value: 30.0 ,than out put :Obesity  ➡️OK
+**5) Categorizes HbA1C into different categories:**
+ - Select column ➡️ Add column ➡️Conditional column ➡️ New column name :"Diabetes Ststus"
+ - If column name : HbA1C , Operator: > ,value: 5.7 ,than out put : Normal ➡️Add clause
+ - Else if column name : HbA1C , Operator: >= ,value: 6.4,than out put : Prediabetes ➡️Add clause
+ - Else if     column name : HbA1C , Operator: => ,value:6.5  ,than out put :Diabetes ➡️OK
+**6) Merge:**
+  - select "year" "month"& "date" column ➡️Add Column ➡️ Merge Column ➡️ Separator: - ➡️ Column Name : "Date of Birth"
+       ➡️ OK
+  - 
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
