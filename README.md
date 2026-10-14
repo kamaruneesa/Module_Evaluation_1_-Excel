@@ -30,7 +30,13 @@
      
 - **Fill  State ID Missing values =**select State ID header ➡️Home t ab ➡️ Group By ➡️BASIC  ➡️Operation = count rows ➡️ ok
   -  Most frequently occurring values=R1013 =614
-    - select column ➡️ Home ➡️Replace values ➡️ Value to find =? ,Replace with =   R1013 
+    -select column ➡️ Home ➡️ Replace values ➡️ Value to find =? ,Replace with =   R1013 
                                   
 
-        
+## Data Transformation
+ **1) Spit the name:**
+   - Select column ➡️ transform ➡️By delimiter ➡️Comma ➡️ Each occurrence of the delimiter 
+   - Select column ➡️ transform ➡️By delimiter ➡️Comma ➡️ Each occurrence of the delimiter
+   -  Column name :Title, Fist name ,and Last name
+   **2)Convert the column
+   - select column ➡️ Home ➡️Replace values ➡️ Value to find = No major surgery,Replace with = 0               
