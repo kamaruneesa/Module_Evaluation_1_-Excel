@@ -28,9 +28,9 @@
           - Hospital tier  =tier-2
          - City tier =   tier-2
      
-- **Fill  State ID Missing values =**select State ID header ➡️Home t ab ➡️ Group By ➡️BASIC  ➡️Operation = count rows ➡️ ok
-  -  Most frequently occurring values=R1013 =614
-    -select column ➡️ Home ➡️ Replace values ➡️ Value to find =? ,Replace with =   R1013 
+- **Fill  State ID Missing values =**select State ID header ➡️
+
+    select column ➡️ Home ➡️ Replace values ➡️ Value to find =? ,Replace with =  Unknown 
                                   
 
 ## Data Transformation
@@ -62,12 +62,16 @@
 **6) Merge:**
   - select "year" "month"& "date" column ➡️Add Column ➡️ Merge Column ➡️ Separator: - ➡️ Column Name : "Date of Birth"
        ➡️ OK
-  - 
-    
-   
+## CLOSE & LODE  (EXCEL STEPS)
 
-
-
+    - Format date: column right click ➡️ format cell ➡️ category ➡️ custom ➡️ type:DD-MMM-YYYY
+**7) Calculate age :**
+ - Add new column " Age " ➡️ add formula : =DATEDIF([@[Date of Birth]], DATE(2023,6,8),"Y")
+**8) Format change:**
+   - select column ➡️ home ➡️ number ➡️ currency    
+  
+## Data Exploration, Analysis& Visualization:
+**
 
 
 
