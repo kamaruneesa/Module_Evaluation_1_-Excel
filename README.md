@@ -85,10 +85,43 @@
 - Diabetes ststus:=VLOOKUP([@[Customer ID]],'Medical Examinations'!A:J,5,FALSE)
 - Date of birth:=VLOOKUP([@[Customer ID]],'Hospitalisation Details'!A:K,6,FALSE)
 - Charges:=VLOOKUP([@[Customer ID]],'Hospitalisation Details'!A:K,8,FALSE)
-- Hospital tire:=VLOOKUP([@[Customer ID]],'Hospitalisation Details'!A:K,9,FALSE)
+- Hospital tire:=VLOOKUP([@[Customer ID]],'Hospitalisation Details'!A:9,FALSE)
 - City tire:=VLOOKUP([@[Customer ID]],'Hospitalisation Details'!A:K,10,FALSE)
 - State ID:=VLOOKUP([@[Customer ID]],'Hospitalisation Details'!A:K,11,FALSE)
-- Age:=VLOOKUP([@[Customer ID]],'Hospitalisation Details'!A:K,5,FALSE) 
+- Age:=VLOOKUP([@[Customer ID]],'Hospitalisation Details'!A:K,5,FALSE)
+
+**Create "Pivot tables"**
+ - create relationship 3 tables ➡️data➡️data tool ➡️Relationship➡️new
+ - join medical examination table with the other two tables
+ - create pivot table ➡️insert ➡️pivot table
+**Analysis using pie/donut chart:**
+ - 1) row: any transplants
+   2) values:numberofmajorsurgeries (sum)
+ - next pivot
+ - 1)row: any transplants
+ - 2)values: average of HBA1C (FIELD SETTINGS-AVERAGE)
+ - NET PIVOT
+ - 1)row: cancer  & smokers
+ - 2)values : customer id
+ - cte chart :pivot table analyze ➡️pivot chartrea
+ **Analysis using column/bar chart:**
+ - pivot
+ - 1)row: weight status
+ - 2)columns: Diabetes status
+ - 3)values: charge
+ - next pivot
+ - 1)row :states id& hospital tier
+ - 2)values: charges cte chart :pivot table analyze ➡️pivot chartrea
+ - 
+   **Analysis using line/scatter plot:**
+   
+ -   cte chart :pivot table analyze ➡️pivot chartrea
+ -    CREATE SLICERSE :"WEIGHT STATUS" &"DIABETES STATUS"
+
+## DASHBORD CREATION:
+ - ADD SHEET ➡️ CREAT DASHBORD
+   
+  
 
 
 
