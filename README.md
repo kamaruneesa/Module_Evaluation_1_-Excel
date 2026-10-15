@@ -71,7 +71,24 @@
    - select column ➡️ home ➡️ number ➡️ currency    
   
 ## Data Exploration, Analysis& Visualization:
-**
+**Vlookup** 
+- Create  new  sheet ,named "Healthcare" ➡️ copy all customer id and headers
+- first name:=VLOOKUP([@[Customer ID]],'Customer Names'!A:D,3,FALSE)
+- BMI:=VLOOKUP([@[Customer ID]],'Medical Examinations'!A:J,2,FALSE)
+- HBAIC:=VLOOKUP([@[Customer ID]],'Medical Examinations'!A:J,4,FALSE)
+- Heart issues:=VLOOKUP([@[Customer ID]],'Medical Examinations'!A:J,6,FALSE)
+- Any transplant:=VLOOKUP([@[Customer ID]],'Medical Examinations'!A:J,7,FALSE)
+- Cancer history:=VLOOKUP([@[Customer ID]],'Medical Examinations'!A:J,8,FALSE)
+- Number of major surgeries:=VLOOKUP([@[Customer ID]],'Medical Examinations'!A:J,9,FALSE)
+- Smoker:=VLOOKUP([@[Customer ID]],'Medical Examinations'!A:J,10,FALSE)
+- Weight status:=VLOOKUP([@[Customer ID]],'Medical Examinations'!A:J,3,FALSE)
+- Diabetes ststus:=VLOOKUP([@[Customer ID]],'Medical Examinations'!A:J,5,FALSE)
+- Date of birth:=VLOOKUP([@[Customer ID]],'Hospitalisation Details'!A:K,6,FALSE)
+- Charges:=VLOOKUP([@[Customer ID]],'Hospitalisation Details'!A:K,8,FALSE)
+- Hospital tire:=VLOOKUP([@[Customer ID]],'Hospitalisation Details'!A:K,9,FALSE)
+- City tire:=VLOOKUP([@[Customer ID]],'Hospitalisation Details'!A:K,10,FALSE)
+- State ID:=VLOOKUP([@[Customer ID]],'Hospitalisation Details'!A:K,11,FALSE)
+- Age:=VLOOKUP([@[Customer ID]],'Hospitalisation Details'!A:K,5,FALSE) 
 
 
 
